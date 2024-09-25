@@ -28,13 +28,13 @@ jobs:
       #   options: --entrypoint redis-server
 
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - name: Set up Ruby
-        uses: actions/setup-ruby@v1
+        uses: actions/setup-ruby@v2.2
         with:
           ruby-version: 2.6.x
       - name: Set up Node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4.0.4
         with:
           node-version: 10.13.0
       - name: Install dependencies
